@@ -44,4 +44,5 @@ The ``calculateTotalPrice`` method now becomes concise and focused on its primar
 By breaking the method down, each piece of logic is now isolated, making it easier to read, understand, modify, and potentially reuse.
 
 ## H
-
+We can use the builder pattern. It allows you to set only the parameters you're interested in and leave others with default values. This way, you can create an object in multiple steps and in any order.
+For complex objects, you get to separate its construction from its representation and avoid the use of a telescoping constructor.
