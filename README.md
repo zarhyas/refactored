@@ -31,3 +31,7 @@ The ``Library`` class serves as a higher-level entity that might could potential
 - We added a class ``Main`` to demonstrate the usage.
 
 ## E
+- Reduce nesting by combining nested ``if`` conditions.
+- Use a ternary operator to simplify the condition.
+
+## F

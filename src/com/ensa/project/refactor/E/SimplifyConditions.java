@@ -17,32 +17,18 @@ class Account{
 public class SimplifyConditions {
 
     public void processOrder(Order order) {
-        if (order != null) {
-            if (order.getStatus() != null) {
-                if (order.getStatus().equals("Shipped")) {
-                    // Processing command
-                }
-            }
+        if (order != null && order.getStatus() != null && order.getStatus().equals("Shipped")) {
+            // Processing command
         }
     }
 
     public String getConnectionStatus( Account account ) {
-
-        String message;
-        if (account.isLogged()) {
-            message = "Connected";
-        } else {
-            message = "Disconnected";
-        }
-
-        return message;
+        return account.isLogged() ? "Connected" : "Disconnected";
     }
 
     public void check(int x, int y) {
-        if (x > 0) {
-            if (y > 0) {
-                System.out.println("Both conditions are verified");
-            }
+        if (x > 0 && y > 0) {
+            System.out.println("Both conditions are verified");
         }
     }
 }
