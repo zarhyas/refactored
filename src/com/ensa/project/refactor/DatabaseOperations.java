@@ -5,25 +5,33 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseOperations {
-    public void listData() throws SQLException {
-        // connection logic
+
+    private Connection connect() throws SQLException {
         Connection connection = DriverManager.getConnection("jdbc:sqlite:sample.db");
+        // connection logic
+        return connection;
+    }
+
+    private void disconnect(Connection connection) throws SQLException {
+        if(connection != null && !connection.isClosed()) {
+            // disconnection logic
+            connection.close();
+        }
+    }
+
+    public void listData() throws SQLException {
+        Connection connection = connect();
 
         // listing logic
 
-        // disconnection logic
-        connection.close();
+        disconnect(connection);
     }
 
     public void addData(String data) throws SQLException {
-        // connection logic
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:sample.db");
+        Connection connection = connect();
 
-        // listing logic
+        // adding data logic
 
-        // disconnection logic
-        connection.close();
+        disconnect(connection);
     }
-
-    // similar methods
 }
