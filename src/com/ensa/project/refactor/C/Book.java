@@ -1,24 +1,21 @@
 package com.ensa.project.refactor.C;
-
 class Book {
     private String title;
     private boolean checkedOut;
 
-    public void checkout() {
-        if (!checkedOut) {
-            checkedOut = true;
-            System.out.println("Book checked out: " + title);
-        } else {
-            System.out.println("Book is already checked out.");
-        }
+    public Book(String title) {
+        this.title = title;
     }
 
-    public void returnBook() {
-        if (checkedOut) {
-            checkedOut = false;
-            // Add the book back to the library's collection.
-        } else {
-            System.out.println("This book was not checked out.");
-        }
+    public String getTitle() {
+        return title;
+    }
+
+    public boolean isCheckedOut() {
+        return checkedOut;
+    }
+
+    public void setCheckedOut(boolean checkedOut) {
+        this.checkedOut = checkedOut;
     }
 }

@@ -18,3 +18,7 @@ This is specific to IntelliJ IDEA:
 
 ## C
 
+In a data-driven fashion, the ``Book`` class must only focus on representing the book's data, while the ``BookManager`` class handles operations related to managing books.
+The ``Library`` class serves as a higher-level entity that might could potentially manage not just books but other resources as well.
+
+## D
