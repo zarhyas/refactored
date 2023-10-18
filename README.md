@@ -35,3 +35,8 @@ The ``Library`` class serves as a higher-level entity that might could potential
 - Use a ternary operator to simplify the condition.
 
 ## F
+Use streams instead of regular loops:
+- Reduce boilerplate.
+- Achieve more readable and expressive code.
+
+## G
