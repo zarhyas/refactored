@@ -40,3 +40,8 @@ Use streams instead of regular loops:
 - Achieve more readable and expressive code.
 
 ## G
+The ``calculateTotalPrice`` method now becomes concise and focused on its primary responsibility: computing the total price.
+By breaking the method down, each piece of logic is now isolated, making it easier to read, understand, modify, and potentially reuse.
+
+## H
+
