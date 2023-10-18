@@ -16,3 +16,5 @@ This is specific to IntelliJ IDEA:
 - For a single file: Press `Ctrl + R` to open the "Find and Replace" dialog.
 - For the entire project/module/directory/scope: Press ``Ctrl + Shift + R`` to open the "Replace in Path" dialog.
 
+## C
+
